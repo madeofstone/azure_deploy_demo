@@ -1,0 +1,7 @@
+[trifacta]
+trifacta_node ansible_host=
+
+
+[trifacta:vars]
+ansible_ssh_private_key_file=/Users/user/Downloads/keys/nos-test-file.pem
+ansible_user=ec2-user
