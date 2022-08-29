@@ -186,7 +186,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-11-01' = {
         ssh: {
           publicKeys: [
             {
-              keyData: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGpkNZQp5eylXcrpUZKyW7alHzP0JKWrjmdmk0kS0NuFlKMBxH6Lxkw/M2rs14LWd8ZTOzCZvUDtLUcGs/Vql7MW52aT3P/yXifrjsjTYhZ4C4sXIZMgYrzkLet+w+4M4quPt1io/RBNDdPUoNBT3NAlEwt3MA6Am8ooUnRiz2JjdvLAci5HiNoN2D0LtPXb4xmbiNH4loh5aS3dttCXEUvznEKqxLwIcOaEmVfdyDwxFNKMHhAzFcp1xbzzATyAhry18R/jCB+BXqTdW63gZhCHlmZjV6t9oC909W8ZTkio8leJgGA1e4hCaB3emvGYiX1J8K6MFtu+JXDQWFHh/Sz6cNnrVtS+bICauvnQXNmghv1sAAca6ZOqckRvQU1eInr4Nba2ezzDJOWXA6+IHLd/Y67qsl9MNKNI3eJfVI2nihGmctMBtF9ZcrKBjxijzdBukYdYbPDEVIqXB8tfbUh4pMYnJ4pONDALPI2PuCStxrInRfA7Yil/TROPmBccc= travis.stone@AMB-4M49LM'
+              keyData: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC45YPCjFBhZOZgpg9S8cZv3eMZGN8IqLvmTeUalmOc92J6CGjFA76eensReYzSGyueBdg1f7sP6E+PWhk3l/o2NN8QsTDN/8kmwlMYWtxrXbmIn0AdnP63ZM7Voit9L0S87IxZBApPrJGvorTel5mPI7JLggsZydUaL2Rz701pG40P3W8vOa3ZE/jc6eGYhrRhQ370aK1+HlxPGIftcu5DkEZMDCI+kHzKYCJSh5jHnmjZzKPIB8V5F2R9mOfJFn0SvPpmWzMD/fHx3AKHmjkV6TpFTOzP4n0ILB0LbugsKfst8mPk6dii8irMHJUliNlKVQbqE+YVi9y+3zwQ+gc65SdOpHmTLc7GfqTbd2F8Z1UtdwC3rbpcpGdOT2wYuwlojvcVOoQ8PhMBoLiutbDqbkypdEvcOFTcVIuifP68RIM6ckw2Dq3v4559E5GNPquT0nx7KliaJxZhBjHAcULMHW684ERcTOLNwUp/boPwG96oWrsFMfJXqupvbtq0nsw/UsKP10bFwL9zIIXlWeo7k9TIGo4fH/wNvRCB7Ej680KiboHZpn6JoRB2VRwWx4S+/buvMMA132rBlTX7Dx7W1iCJ1QE8Iwv+F9YHip8jCStwHdXi27F51dbMICHxjbk9h/Cj5k03o06vX2S2v+I/d2I2V8qBox8x3o/sjF50Ww== travis.stone@AMB-4M49LM'
               path: '/home/${adminUsername}/.ssh/authorized_keys'
             }
           ]
