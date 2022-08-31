@@ -159,15 +159,17 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-11-01' = {
     }
     storageProfile: {
       osDisk: {
+        name: '${virtualMachineName}_OSDISK'
         createOption: 'FromImage'
+        diskSizeGB: 128 
         managedDisk: {
-          storageAccountType: 'Premium_LRS'
+          storageAccountType: 'Standard_LRS'
         }
       }
       imageReference: {
-        publisher: 'RedHat'
-        offer: 'RHEL'
-        sku: '8.1'
+        publisher: 'procomputers'
+        offer: 'centos-8-2'
+        sku: 'centos-8-2'
         version: 'latest'
     }
     }
@@ -191,7 +193,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-11-01' = {
             }
           ]
         }
-    }
+      }
     }
   }
 }
