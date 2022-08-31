@@ -14,7 +14,7 @@ param publicIpAddressName string = '${deploymentName}-${deploymentString}-pip'
 param publicIpAddressType string = 'static'
 param publicIpAddressSku string = 'Basic'
 param virtualMachineName string = '${deploymentName}-${deploymentString}-vm'
-param virtualMachineSize string = 'Standard_E8s_v3'
+param virtualMachineSize string = 'Standard_D8s_v3'
 param adminUsername string
 @secure()
 param adminPassword string
@@ -167,9 +167,9 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-11-01' = {
         }
       }
       imageReference: {
-        publisher: 'procomputers'
-        offer: 'centos-8-2'
-        sku: 'centos-8-2'
+        publisher: 'RedHat'
+        offer: 'RHEL'
+        sku: '82gen2'
         version: 'latest'
     }
     }
