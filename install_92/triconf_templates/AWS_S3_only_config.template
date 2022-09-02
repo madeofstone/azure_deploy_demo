@@ -1,0 +1,21 @@
+
+# IMPORTANT: Don't edit the file directly
+#
+# If you are doing an AWS deployment with S3 only, copy this file to config.txt
+# cp AWS_S3_only_config.template config.txt
+#
+# Then change only the bucket you would like to configure Cloud Designer to use.
+# If a line starts with #, it is a comment and will not alter the trifacta configuration.
+# the JSON path is case sensitive so AWS.S3.BUCKET.NAME is not the same as aws.s3.bucket.name
+
+# user config section
+
+aws.s3.bucket.name = "bucket_name"
+
+# END user config section
+
+
+# SYSTEM CONFIG: do not edit
+hdfs.enabled = False
+webapp.storageProtocol = "s3"
+aws.credentialProvider = "instance"

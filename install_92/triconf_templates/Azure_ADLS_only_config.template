@@ -1,0 +1,24 @@
+## WORK IN PROGRESS, not ready for use (hasn't been tested)
+
+azure.keyVaultUrl = ""
+azure.applicationid = ""
+azure.directoryid = ""
+azure.secret = ""
+
+# TODO: update the code to handle Array values correctly
+fileStorage.whitelist = ["sftp","abfss"]
+#fileStorage.defaultBaseUris = "abfss://<storageContainer>@<storageAccount>.dfs.core.windows.net"
+#webapp.runInDatabricks = true
+
+
+# IF Databricks is enabled, uncomment these settings and make sure to set the databricks.serviceUrl
+
+#feature.databricks.connection.enabled = true
+#feature.databricks.enableExternalTableWrites = true
+#feature.databricks.enableDeltaTableWrites = true
+#databricks.serviceUrl = ""
+
+# don't change these values
+azure.adlsgen2.mode =  "system"
+webapp.storageProtocal = "abfss"
+aws.s3.enabled = false
